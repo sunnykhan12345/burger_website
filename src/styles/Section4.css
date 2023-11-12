@@ -1,0 +1,39 @@
+/* section 4 promotions  */
+
+.promotionse_section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--light-gray);
+}
+
+.promotionse_section h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.promotionse_section p {
+    font-size: 1.125rem;
+}
+
+.promotionse_section ul {
+    font-size: .9375rem;
+}
+
+.bg_paralex_section {
+    background: url('../assets/assets/parallax/bg.jpg')no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+}
+
+
+/* media query */
+
+@media(max-width:992px) {
+    .bg_paralex_section {
+        background-attachment: scroll;
+        height: 500px;
+    }
+}
