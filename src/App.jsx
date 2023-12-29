@@ -1,18 +1,24 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home/Home'
-
-
-
+import Header from "./compnent/Header"
+import Read from "./compnent/Read"
+import { BrowserRouter, Routes , Route } from 'react-router-dom'
+import "./App.css"
+import Create from './compnent/Create'
+import Updated from './compnent/Updated'
 const App = () => {
   return (
-
-      <BrowserRouter>
+    <div className='app'>
       
-        <Routes>
-         <Route path='/' element={<Home/>}/>
-        </Routes>
-      </BrowserRouter>
+     <BrowserRouter>
+       <Header />
+       <Routes>
+        <Route path='/create' element={<Create />}/>
+        <Route path='/' element={<Read />}/>
+        <Route path='/update' element={<Updated />} />
+       </Routes>
+     </BrowserRouter>
+     
+    </div>
   )
 }
 
