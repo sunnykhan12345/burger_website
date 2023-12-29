@@ -31,9 +31,19 @@
 
 @media(max-width:600px){
   .form{
-    width: 40%;
+    width: 100%;
     background-color: #fff !important;
     margin: auto;
     padding: 70px 40px;
   }
+}
+
+@media(max-width:600px){
+  th{
+    font-size: 13px !important;
+  }
+  td{
+    font-size: 10px !important;
+  }
+
 }
